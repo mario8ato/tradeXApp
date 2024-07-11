@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mario8a.tradexapp.databinding.FragmentTradeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class TradeFragment : Fragment() {
 
     private var _biding: FragmentTradeBinding? = null
