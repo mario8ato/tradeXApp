@@ -10,5 +10,8 @@
     <color name="gold">#ffe78f</color>
     <color name="black_alpha">#98000000</color>
 
+    <color name="blue">#3F51B5</color>
+    <color name="gray">#808080</color>
+
     <color name="red">#FF0000</color>
 </resources>

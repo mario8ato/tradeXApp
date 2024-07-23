@@ -5,10 +5,326 @@
     android:layout_height="match_parent"
     tools:context=".ui.account.AccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:elevation="2dp"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:hint="Account Name"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/round"
+            android:text="Add Account"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/gray"
+            android:text="Reset"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="6dp"
+            android:text="@string/account_list_title" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="4dp"
+            android:padding="2dp"
+            >
+            <TableRow
+                android:background="@color/primary">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Id"
+                    android:padding="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Display Name"
+                    android:padding="10dp"
+                    android:textSize="16sp"/>
+
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="10031"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Internal Trading Book"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="22214"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Test Account 20"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="44044"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Trading Account 1"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="8dp"
+            android:elevation="2dp"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:hint="Add User to Account"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:text="Add User"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="6dp"
+            android:text="@string/user_list_title" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="4dp"
+            android:padding="2dp"
+            >
+            <TableRow
+                android:background="@color/primary">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Account Id"
+                    android:padding="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Username"
+                    android:padding="10dp"
+                    android:textSize="16sp"/>
+
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="44044"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="user01"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="44044"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="user04"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:text="44044"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/primary"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="user05"
+                    android:padding="10dp"
+                    android:textSize="14sp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- TODO: OBTENER DATOS, debe llegar en el item_account -->
+        <!--
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rvAccount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="16dp"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/rounded_table"
+               android:elevation="4dp"
+               android:padding="8dp" />
+        -->
+    </LinearLayout>
 
 </FrameLayout>

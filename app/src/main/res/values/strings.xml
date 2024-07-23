@@ -6,4 +6,12 @@
     <!-- Bottom navbar -->
     <string name="account">Account</string>
     <string name="trade">Trade</string>
+
+    <!-- Account fragment -->
+    <string name="account_list_title">Account List</string>
+    <string name="user_list_title">User List</string>
+
+    <!-- Trade fragment -->
+    <string name="trade_title">Trades</string>
+    <string name="position_title">Positions</string>
 </resources>
